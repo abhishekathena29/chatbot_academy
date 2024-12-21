@@ -11,15 +11,15 @@ class _ChatPageState extends State<ChatPage> {
   final TextEditingController _controller = TextEditingController();
   final List<Map<String, String>> _messages = [];
 
-  void _sendMessage() {
-    if (_controller.text.isNotEmpty) {
-      setState(() {
-        _messages.add({"user": _controller.text});
-        _messages.add({"bot": "This is a bot response."});
-        _controller.clear();
-      });
-    }
-  }
+  // void _sendMessage() {
+  //   if (_controller.text.isNotEmpty) {
+  //     setState(() {
+  //       _messages.add({"user": _controller.text});
+  //       _messages.add({"bot": "This is a bot response."});
+  //       _controller.clear();
+  //     });
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
