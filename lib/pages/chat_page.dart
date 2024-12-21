@@ -65,14 +65,14 @@ class _ChatPageState extends State<ChatPage> {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           padding: const EdgeInsets.all(12),
-                          child: Text(
-                            isUser
-                                ? _messages[index]["user"]!
-                                : _messages[index]["bot"]!,
-                            style: TextStyle(
-                              color: isUser ? Colors.white : Colors.black,
-                            ),
-                          ),
+                          child: Text('message'
+                              // isUser
+                              //     ? _messages[index]["user"]!
+                              //     : _messages[index]["bot"]!,
+                              // style: TextStyle(
+                              //   color: isUser ? Colors.white : Colors.black,
+                              // ),
+                              ),
                         ),
                       ),
                     );
