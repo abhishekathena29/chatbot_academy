@@ -51,19 +51,19 @@ class _ChatPageState extends State<ChatPage> {
                 child: ListView.builder(
                   itemCount: _messages.length,
                   itemBuilder: (context, index) {
-                    final isUser = _messages[index].containsKey("user");
+                    // final isUser = _messages[index].containsKey("user");
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Align(
-                        alignment: isUser
-                            ? Alignment.centerRight
-                            : Alignment.centerLeft,
+                        // alignment: isUser
+                        //     ? Alignment.centerRight
+                        //     : Alignment.centerLeft,
                         child: Container(
                           decoration: BoxDecoration(
-                            color:
-                                isUser ? Colors.blueAccent : Colors.grey[300],
-                            borderRadius: BorderRadius.circular(10),
-                          ),
+                              // color:
+                              //     isUser ? Colors.blueAccent : Colors.grey[300],
+                              // borderRadius: BorderRadius.circular(10),
+                              ),
                           padding: const EdgeInsets.all(12),
                           child: Text('message'
                               // isUser
@@ -87,11 +87,11 @@ class _ChatPageState extends State<ChatPage> {
                       child: TextField(
                         controller: _controller,
                         decoration: InputDecoration(
-                          hintText: "Type your message...",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
+                            // hintText: "Type your message...",
+                            // border: OutlineInputBorder(
+                            //   borderRadius: BorderRadius.circular(10),
+                            // ),
+                            ),
                         // onSubmitted: (value) {
                         //   _sendMessage();
                         // },
@@ -103,7 +103,7 @@ class _ChatPageState extends State<ChatPage> {
                         // _sendMessage();
                       },
                       icon: const Icon(Icons.send),
-                      color: Colors.blueAccent,
+                      // color: Colors.blueAccent,
                     ),
                   ],
                 ),
